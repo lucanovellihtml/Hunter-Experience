@@ -1,0 +1,41 @@
+/* ---- body ---- */
+* {
+    font-family: 'Futura PT', sans-serif;
+}
+
+a,
+button {
+    font-weight: 600 !important;
+}
+
+/* ---- header ---- */
+/* custom button nav header */
+.button-header {
+    border: none;
+    font-size: 37px;
+}
+
+
+/* custom button img nav header */
+.navbar-toggler-icon-new {
+    background-image: url(/img/icon/burger-menu-svgrepo-com.png);
+}
+
+
+/* custom offcanvas-top */
+.offcanvas-new {
+    --bs-offcanvas-height: none;
+}
+
+
+/* custom offcanvas-top close button */
+.btn-close-new {
+    --bs-btn-close-color: black;
+    --bs-btn-close-opacity: none;
+}
+
+
+/* custom z-index */
+.z-index-new {
+    top: 172px;
+}
