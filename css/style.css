@@ -8,6 +8,34 @@ button {
     font-weight: 600 !important;
 }
 
+h1 {
+    font-weight: 700;
+    font-size: clamp(10px, 13vw, 100px);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(10px, 9vw, 50px);
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: clamp(25px, 6vw, 50px);
+}
+
+h6 {
+    font-weight: 700;
+    font-size: clamp(10px, 4vw, 35px);
+}
+
+p {
+    font-size: clamp(10px, 5vw, 30px);
+}
+
+
 /* ---- header ---- */
 /* custom button nav header */
 .button-header {
@@ -35,7 +63,131 @@ button {
 }
 
 
-/* custom z-index */
-.z-index-new {
-    top: 172px;
+/* ---- main ---- */
+/* custom section into */
+.orizzontal-line {
+    height: 2px;
+    width: 90%;
+    background-color: #f2c65f;
+    display: inline-block;
+}
+
+/* custom section strategy */
+.point {
+    background-color: #f2c65f;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+/* custom section phrase */
+.box-col-animation {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.box-span-animation {
+    font-size: clamp(10px, 13vw, 100px);
+    font-weight: 700;
+    animation: marquee-right-to-left 8s linear infinite;
+}
+
+@keyframes marquee-right-to-left {
+    0% {
+        transform: transalteX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* custom section social media & marketing specialist */
+.svg-size {
+    width: 20vw;
+    max-width: 100px;
+    height: auto;
+}
+
+/* swiper section experiences */
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide {
+    width: 40%;
+    max-width: 450px;
+}
+
+swiper-slide:nth-child(2n) {
+    width: 40%;
+}
+
+swiper-slide:nth-child(3n) {
+    width: 40%;
+}
+
+#boxScouting,
+#boxAudioVideo,
+#boxTrialExperience,
+#boxCatering,
+#boxScenografia {
+    height: 100vh;
+    max-height: 650px;
+}
+
+@media screen and (max-width: 399px) {
+
+    #boxScouting,
+    #boxAudioVideo,
+    #boxTrialExperience,
+    #boxCatering,
+    #boxScenografia {
+        height: 400px;
+    }
+
+
+}
+
+@media screen and (max-width: 499px) and (min-width: 400px) {
+
+    #boxScouting,
+    #boxAudioVideo,
+    #boxTrialExperience,
+    #boxCatering,
+    #boxScenografia {
+        height: 450px;
+    }
+
+
+}
+
+/* section ask */
+#accordionAsk button {
+    font-weight: 500;
+    font-size: clamp(20px, 6vw, 40px);
+}
+
+/* ---- footer ---- */
+footer h1 {
+    font-size: 30px;
+}
+
+footer h2 {
+    font-size: 30px;
+}
+
+footer p {
+    font-size: 20px;
 }
