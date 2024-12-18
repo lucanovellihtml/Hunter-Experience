@@ -191,3 +191,50 @@ footer h2 {
 footer p {
     font-size: 20px;
 }
+
+/* section clients */
+#swiperClients swiper-container {
+    width: 200px;
+    height: 300px;
+}
+
+#swiperClients swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+#swiperClients img {
+    width: 30vw;
+    height: auto;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+@media screen and (max-width: 499px) and (min-width: 300px) {
+
+    #swiperClients swiper-container {
+        width: 240px;
+        height: 320px;
+    }
+
+}
+
+@media screen and (max-width: 699px) and (min-width: 500px) {
+
+    #swiperClients swiper-container {
+        width: 340px;
+        height: 420px;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    #swiperClients swiper-container {
+        width: 440px;
+        height: 520px;
+    }
+
+}
