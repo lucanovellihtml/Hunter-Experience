@@ -27,7 +27,7 @@ h3 {
 
 h6 {
     font-weight: 700;
-    font-size: clamp(10px, 4vw, 35px);
+    font-size: clamp(10px, 7vw, 40px);
 }
 
 p {
