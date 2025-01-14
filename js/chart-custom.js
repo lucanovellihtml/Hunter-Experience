@@ -1,13 +1,13 @@
 // Definisco i dati da mostrare nel grafico
 var data = {
-    labels: ["2022", "2023", "2024"],
+    labels: ["2022", "2023", "2024", "2025"],
     datasets: [
         {
             label: "Collaborazione effettuate",
             pointBackgroundColor: "black",
             pointBorderColor: "black",
             borderColor: "#f2c65f",
-            data: [2, 6, 11]
+            data: [3, 5, 11]
         },
     ]
 };
@@ -20,7 +20,8 @@ const stackedLine = new Chart(ctx, {
     options: {
         scales: {
             y: {
-                stacked: true
+                min: 0,
+                max: 12,
             }
         }
     }
