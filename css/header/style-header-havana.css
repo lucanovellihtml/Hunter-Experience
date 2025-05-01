@@ -1,0 +1,32 @@
+/* ---- header havana ---- */
+header {
+    background-color: yellow;
+}
+
+/* custom button nav header */
+.button-header {
+    border: none;
+    font-size: 37px;
+}
+
+/* custom button img nav header */
+.navbar-toggler-icon-new {
+    background-image: url(/img/icon/burger-menu-svgrepo-com.png);
+}
+
+.navbar-toggler-icon-new-white {
+    background-image: url(/img/icon/burger-menu-svgrepo-com-white.png);
+}
+
+
+/* custom offcanvas-top */
+.offcanvas-new {
+    --bs-offcanvas-height: none;
+}
+
+
+/* custom offcanvas-top close button */
+.btn-close-new {
+    --bs-btn-close-color: black;
+    --bs-btn-close-opacity: none;
+}
