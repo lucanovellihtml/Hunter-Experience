@@ -12,10 +12,10 @@ function loadScript(url, callback) {
 
 // Carica lo script dopo 3 secondi
 setTimeout(() => {
-    loadScript('/js/chart-italy/mapdata.js', function () {
+    loadScript('/js/havana/chart-italy/mapdata.js', function () {
     });
-    loadScript('/js/chart-italy/countrymap.js', function () {
+    loadScript('/js/havana/chart-italy/countrymap.js', function () {
     });
-    loadScript('/js/chart-italy/script-clients.js', function () {
+    loadScript('/js/havana/chart-italy/script-clients.js', function () {
     });
 }, 3000)
