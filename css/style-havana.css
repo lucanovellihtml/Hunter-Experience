@@ -102,6 +102,14 @@ h6 {
     animation: bounce-effect 2s linear infinite;
 }
 
+#titleYellowSeason {
+    transition: color 0.5s linear;
+}
+
+#titleYellowSeason:hover {
+    color: yellow;
+}
+
 @keyframes bounce-effect {
     0% {
         transform: translateY(0);
