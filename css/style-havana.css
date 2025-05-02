@@ -9,6 +9,12 @@ body {
     margin: 0;
 }
 
+#mainHavana,
+#footerHavana,
+#headerHavana {
+    display: none;
+}
+
 p {
     font-size: clamp(10px, 5vw, 30px);
 }
