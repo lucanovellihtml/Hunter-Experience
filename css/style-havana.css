@@ -92,6 +92,46 @@ h6 {
     height: auto;
 }
 
+#divSvgHavana {
+    animation: bounce-effect 2s linear infinite;
+}
+
+@keyframes bounce-effect {
+    0% {
+        transform: translateY(0);
+        /* Inizia dalla posizione originale */
+        animation-timing-function: ease-out;
+        /* Rallenta quando inizia a salire */
+    }
+
+    40% {
+        transform: translateY(-30px);
+        /* Sale (picco) */
+        animation-timing-function: ease-in;
+        /* Accelera verso il picco */
+    }
+
+    60% {
+        transform: translateY(-15px);
+        /* Piccolo rimbalzo verso il basso */
+        animation-timing-function: ease-out;
+        /* Rallenta mentre scende */
+    }
+
+    80% {
+        transform: translateY(-5px);
+        /* Rimbalzo ancora più piccolo */
+        animation-timing-function: ease-in;
+        /* Accelera verso la fine */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Torna alla posizione originale */
+    }
+}
+
+
 /* custom section history */
 #card h6,
 h4 {
