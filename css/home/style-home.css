@@ -1,0 +1,15 @@
+/* ---- section intro ---- */
+.logo-size {
+    max-width: 100px;
+    height: auto;
+}
+
+.button-hunterexperience {
+    font-weight: 700;
+}
+
+.button-havana {
+    background-color: yellow;
+    color: black;
+    font-family: 'Akira Expanded';
+}
