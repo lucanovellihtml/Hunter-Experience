@@ -1,0 +1,269 @@
+/* ---- body ---- */
+* {
+    font-family: 'Futura PT', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#mainHavana,
+#footerHavana,
+#headerHavana {
+    display: none;
+}
+
+p {
+    font-size: clamp(10px, 5vw, 30px);
+}
+
+a,
+button {
+    font-weight: 600 !important;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(10px, 13vw, 100px);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(10px, 9vw, 50px);
+    font-family: 'Akira Expanded';
+    font-style: normal;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: clamp(25px, 6vw, 50px);
+}
+
+h6 {
+    font-weight: 700;
+    font-size: clamp(10px, 7vw, 40px);
+}
+
+.svg-size-button-scrolling {
+    width: 10vw;
+    max-width: 30px;
+    height: auto;
+}
+
+.sfumatura-riga {
+    width: 100%;
+    /* Larghezza della riga */
+    height: 1px;
+    /* Altezza della riga */
+    background: linear-gradient(to right,
+            black 0%,
+            yellow 30%,
+            yellow 50%,
+            yellow 60%,
+            black 100%);
+    /*
+            * to right: Direzione della sfumatura (da sinistra a destra)
+            * black 0%: Inizia con il nero al 0% della larghezza
+            * black 40%: Il nero si estende fino al 40%
+            * yellow 50%: Il giallo è al centro (50%)
+            * black 60%: Il nero riprende al 60%
+            * black 100%: Termina con il nero al 100%
+            */
+    margin: 20px auto;
+    /* Centra la riga orizzontalmente */
+}
+
+/* ---- main ---- */
+/* custom section intro */
+#intro {
+    background: linear-gradient(to bottom, yellow, black);
+    min-height: 100vh;
+    margin: 0;
+}
+
+#intro h1 {
+    font-family: 'Akira Expanded';
+    font-size: clamp(7px, 13vw, 100px);
+}
+
+#intro button {
+    font-family: 'Akira Expanded';
+}
+
+.svg-size {
+    width: 20vw;
+    max-width: 100px;
+    height: auto;
+}
+
+#divSvgHavana {
+    animation: bounce-effect 2s linear infinite;
+}
+
+#titleYellowSeason {
+    transition: color 0.5s linear;
+}
+
+#titleYellowSeason:hover {
+    color: yellow;
+}
+
+@keyframes bounce-effect {
+    0% {
+        transform: translateY(0);
+        /* Inizia dalla posizione originale */
+        animation-timing-function: ease-out;
+        /* Rallenta quando inizia a salire */
+    }
+
+    40% {
+        transform: translateY(-30px);
+        /* Sale (picco) */
+        animation-timing-function: ease-in;
+        /* Accelera verso il picco */
+    }
+
+    60% {
+        transform: translateY(-15px);
+        /* Piccolo rimbalzo verso il basso */
+        animation-timing-function: ease-out;
+        /* Rallenta mentre scende */
+    }
+
+    80% {
+        transform: translateY(-5px);
+        /* Rimbalzo ancora più piccolo */
+        animation-timing-function: ease-in;
+        /* Accelera verso la fine */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Torna alla posizione originale */
+    }
+}
+
+
+/* custom section history */
+#card h6,
+h4 {
+    font-family: 'Akira Expanded';
+}
+
+#svgArrow {
+    width: 4vw;
+    max-width: 30px;
+    height: auto;
+}
+
+/* custom section service */
+#service h4 {
+    font-family: 'Akira Expanded';
+    font-size: clamp(10px, 7vw, 30px);
+}
+
+/* custom section follow up */
+#titleFollowUp {
+    color: white;
+    /* Colore interno delle lettere */
+    -webkit-text-stroke: 2px black;
+    /* Bordo delle lettere: spessore 2px, colore giallo */
+    transition: color 0.3s ease-in-out;
+}
+
+#titleFollowUp:hover {
+    color: black;
+}
+
+/* custom section collaboration */
+#collaboration h6 {
+    font-weight: 700;
+    font-size: clamp(10px, 4vw, 20px);
+    font-family: 'Akira Expanded';
+    font-style: normal;
+}
+
+@media screen and (max-width: 399px) {
+
+    #map {
+        width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 499px) and (min-width: 400px) {
+
+    #map {
+        width: 400px;
+        height: auto;
+    }
+
+}
+
+#swiperHavanaCollab swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#swiperHavanaCollab swiper-slide {
+    text-align: center;
+    display: flex;
+    background-color: #00000000;
+    justify-content: center;
+    align-items: center;
+    /* Transizione fluida */
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#swiperHavanaCollab img {
+    width: 30vw;
+    height: auto;
+    max-width: 150px;
+}
+
+#swiperHavanaCollab swiper-slide:hover {
+    /* Transizione fluida */
+    transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* custom section contact */
+#contact button {
+    font-family: 'Akira Expanded';
+}
+
+/* custom section gallery */
+#swiperHavana swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+#swiperHavana swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#swiperHavana swiper-slide img {
+    display: block;
+    width: 100%;
+    min-width: 200px;
+    max-width: 400px;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid white;
+    /* Imposta un bordo bianco di 5 pixel */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    /* Aggiunge un'ombra leggera */
+}
