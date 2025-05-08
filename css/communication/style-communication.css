@@ -1,0 +1,250 @@
+/* ---- body ---- */
+* {
+    font-family: 'Futura PT', sans-serif;
+}
+
+a,
+button {
+    font-weight: 600 !important;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: clamp(10px, 13vw, 100px);
+}
+
+h2 {
+    font-weight: 700;
+    font-size: clamp(10px, 9vw, 50px);
+    font-family: "Bebas Neue", serif;
+    font-style: normal;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: clamp(25px, 6vw, 50px);
+}
+
+h6 {
+    font-weight: 700;
+    font-size: clamp(10px, 7vw, 40px);
+}
+
+p {
+    font-size: clamp(10px, 5vw, 30px);
+}
+
+/*header,
+main,
+footer,
+#listMenuButtonMain {
+    display: none;
+}*/
+
+/* list menu button main */
+.custom-button-list-menu-main {
+    padding: 10px 18px;
+    border-radius: 50px;
+    height: 56px;
+    min-width: 56px;
+    transition: 3s;
+}
+
+.hide {
+    display: none;
+}
+
+li button:hover>.hide {
+    display: block;
+}
+
+/* ---- main ---- */
+/* custom section into */
+.orizzontal-line {
+    height: 2px;
+    width: 90%;
+    background-color: #f2c65f;
+    display: inline-block;
+}
+
+/* custom section strategy */
+.point {
+    background-color: #f2c65f;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+/* custom section phrase */
+.box-col-animation {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.box-span-animation {
+    font-size: clamp(10px, 13vw, 100px);
+    font-weight: 700;
+    animation: marquee-right-to-left 8s linear infinite;
+}
+
+@keyframes marquee-right-to-left {
+    0% {
+        transform: transalteX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* custom section social media & marketing specialist */
+.svg-size {
+    width: 20vw;
+    max-width: 100px;
+    height: auto;
+}
+
+/* custom section experiences swiper */
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide {
+    width: 40%;
+    max-width: 450px;
+}
+
+swiper-slide:nth-child(2n) {
+    width: 40%;
+}
+
+swiper-slide:nth-child(3n) {
+    width: 40%;
+}
+
+#boxScouting,
+#boxAudioVideo,
+#boxTrialExperience,
+#boxCatering,
+#boxScenografia {
+    height: 100vh;
+    max-height: 650px;
+}
+
+@media screen and (max-width: 399px) {
+
+    #boxScouting,
+    #boxAudioVideo,
+    #boxTrialExperience,
+    #boxCatering,
+    #boxScenografia {
+        height: 400px;
+    }
+
+
+}
+
+@media screen and (max-width: 499px) and (min-width: 400px) {
+
+    #boxScouting,
+    #boxAudioVideo,
+    #boxTrialExperience,
+    #boxCatering,
+    #boxScenografia {
+        height: 450px;
+    }
+
+
+}
+
+/* section ask */
+#accordionAsk button {
+    font-weight: 500;
+    font-size: clamp(20px, 6vw, 40px);
+}
+
+S
+
+/* section clients */
+#swiperClients swiper-container {
+    width: 200px;
+    height: 300px;
+}
+
+#swiperClients swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+#swiperClients img {
+    width: 30vw;
+    height: auto;
+    max-width: 300px;
+    min-width: 200px;
+}
+
+#swiperClients svg {
+    width: 4vw;
+    max-width: 30px;
+    height: auto;
+}
+
+swiper-slide:nth-child(1n):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 200ms ease-out;
+}
+
+swiper-slide:nth-child(2n):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 200ms ease-out;
+}
+
+swiper-slide:nth-child(3n):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 200ms ease-out;
+}
+
+swiper-slide:nth-child(4n):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 200ms ease-out;
+}
+
+@media screen and (max-width: 499px) and (min-width: 300px) {
+
+    #swiperClients swiper-container {
+        width: 240px;
+        height: 320px;
+    }
+
+}
+
+@media screen and (max-width: 699px) and (min-width: 500px) {
+
+    #swiperClients swiper-container {
+        width: 340px;
+        height: 420px;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    #swiperClients swiper-container {
+        width: 440px;
+        height: 520px;
+    }
+
+}
